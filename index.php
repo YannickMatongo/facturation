@@ -12,6 +12,8 @@
 
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link css -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -50,11 +52,45 @@
                 </h1>
             </div>
         </div>
-        <div class="dropdown-divider border-warning"></div>
-        <div class="row"></div>
-        <div class="dropdown-divider border-warning"></div>
-        <div class="row"></div>
-
+        <hr class="hr-light">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="fw-bold mb-0">Liste des factures</h5>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-primary btn-sm me-3"><i class="fas fa-folder-plus px-1"></i>Nouveau</button>
+                    <a href="#" class="btn btn-success btn-sm" id="export"><i class="fas fa-table px-1"></i>Exporter</a>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-light">
+        <div class="row">
+            <div class="table-responsive" id="orderTable">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">client</th>
+                            <th scope="col">Caissier</th>
+                            <th scope="col">Montant</th>
+                            <th scope="col">Perçu</th>
+                            <th scope="col">Retourné</th>
+                            <th scope="col">Etat</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>@mdo</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </section>
 
 
